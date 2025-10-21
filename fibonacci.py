@@ -25,3 +25,5 @@ def print_fib():
   fib = ask_input()
   fib_list = return_fib(fib)
   print(fib_list)
+
+print_fib()
