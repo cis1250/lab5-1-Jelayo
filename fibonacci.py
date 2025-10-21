@@ -8,7 +8,9 @@ def ask_input():
     while (fib <= 0):
       print("Pick a number greater than 0")
       input("How many terms of the Fibonacci sequence would you like?")
-  else:
+   return fib
+
+  def return_fib():
       x = 0
       y = 1
       z = 0
@@ -16,7 +18,10 @@ def ask_input():
       for z in range (int(fib)):
           x, y = y, x + y
           if x >= int(fib): break
-          fib_list = [x]      
+          fib_list.append(x)  
+      return fib_list
 
-def return_fibonacci():
-  return fib_list
+def print_fib():
+  fib = ask_input()
+  fib_list = return_fib(fib)
+  print(fib_list)
